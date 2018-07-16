@@ -1,0 +1,14 @@
+body {
+    padding-top: 80px;
+    background-image: url("/public/cloudBackground.svg");
+}
+
+.main {
+    background-color: #ffffffb3;
+    margin-top: 100px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.top {
+    font-family: 'Indie Flower', cursive;
+}
