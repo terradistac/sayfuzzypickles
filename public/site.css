@@ -12,3 +12,8 @@ body {
 .top {
     font-family: 'Indie Flower', cursive;
 }
+
+.navbar {
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffffe6 !important;
+}
