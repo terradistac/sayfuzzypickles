@@ -13,7 +13,7 @@ module.exports = function (router) {
             if (err){
                 res.send(err);
             }
-            res.json({ message: 'New entry created.' });
+            res.redirect('http://localhost');
         })
     })
 
@@ -23,7 +23,7 @@ module.exports = function (router) {
             if (err){
                 res.send(err);
             }
-            res.setHeader("Access-Control-Allow-Origin", "http://localhost:8080");
+            res.setHeader("Access-Control-Allow-Origin", "http://localhost");
             res.send(entries);
         })
     })
