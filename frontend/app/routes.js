@@ -1,3 +1,7 @@
 module.exports = function (app) {
-  app.get('/', (req, res) => res.render('index.ejs'))
+  app.get('/', function (req, res) {
+    res.render('index.ejs', {
+      env: process.env.NODE_ENV
+    })
+  })
 }

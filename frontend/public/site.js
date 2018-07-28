@@ -5,7 +5,6 @@ $(document).ready(function () {
       // append contents to article-space
       var title = '<h1>' + data[i].title + '</h1>'
       var article = '<p>' + data[i].body + '</p>'
-      console.log(typeof data[i].date)
       var name = '<p>Written by: ' + data[i].user + ' and submitted on: ' + data[i].date + '</p>'
       $('#article-space').append(title)
       $('#article-space').append('<br>')
