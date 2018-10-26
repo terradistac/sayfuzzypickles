@@ -9,7 +9,7 @@ const MongoStore = require('connect-mongo')(session)
 const port = process.env.port || 8081
 const router = express.Router()
 
-require('dotenv').config()
+// require('dotenv').config()
 
 // configure app here
 require('./app/config')(app, express, path)
