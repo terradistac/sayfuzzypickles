@@ -1,5 +1,5 @@
 module.exports = function (router) {
-  // take in mongoose model here
+
   var BlogEntry = require('./models/blog')
 
   router.route('/createentry')
