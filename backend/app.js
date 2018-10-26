@@ -25,7 +25,7 @@ app.use(helmet())
 
 app.use(session({
   name: 'session',
-  secret: '&dh$~H[*TiAhzb}%e_!&qZM>F37ure6q6_hsXj6}(G#e]%sM',
+  secret: process.env.SESS_SECRET,
   store: new MongoStore({ mongooseConnection: mongoose.connection })
 }))
 
