@@ -2,7 +2,6 @@ $(document).ready(function () {
   $.getJSON('http://www.sayfuzzypickles.net/services/retrieveentries', function (data) {
     var i = data.length - 1
     while (i >= 0) {
-      // append contents to article-space
       var title = '<h1>' + data[i].title + '</h1>'
       var article = '<p>' + data[i].body + '</p>'
       var name = '<p>Written by: ' + data[i].user + ' and submitted on: ' + data[i].date + '</p>'

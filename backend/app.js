@@ -9,18 +9,10 @@ const MongoStore = require('connect-mongo')(session)
 const port = process.env.port || 8081
 const router = express.Router()
 
-// require('dotenv').config()
-
-// configure app here
 require('./app/config')(app, express, path)
-
-// configure mongoose here
 require('./app/dbconfig')(mongoose)
-
-// configure routes here
 require('./app/routes')(router)
 
-// security section
 app.use(helmet())
 
 app.use(session({
@@ -34,8 +26,6 @@ app.use(bodyParser.json())
 
 app.use('/api', router)
 
-// index page for administrative access to database and the blog site
-
 app.get('/', function (req, res) {
   res.render('index.ejs', {
     env: process.env.NODE_ENV
@@ -43,4 +33,3 @@ app.get('/', function (req, res) {
 })
 
 app.listen(port)
-console.log('API listening on port ' + port)
