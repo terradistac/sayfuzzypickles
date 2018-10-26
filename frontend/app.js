@@ -9,7 +9,6 @@ const session = require('express-session')
 const MongoStore = require('connect-mongo')(session)
 const port = process.env.port || 8080
 
-require('dotenv').config()
 require('./app/dbconfig')(mongoose)
 require('./app/config')(app, express, path)
 require('./app/routes')(app)
