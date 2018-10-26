@@ -9,7 +9,7 @@ const session = require('express-session')
 const MongoStore = require('connect-mongo')(session)
 const port = process.env.port || 8080
 
-require('dotenv').config()
+// require('dotenv').config()
 
 // connect to database using mongoose
 require('./app/dbconfig')(mongoose)
