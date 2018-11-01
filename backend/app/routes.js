@@ -1,5 +1,4 @@
 module.exports = function (router) {
-
   var BlogEntry = require('./models/blog')
 
   router.route('/createentry')
