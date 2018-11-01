@@ -4,7 +4,7 @@ $(document).ready(function () {
     '<div class="col-sm-8 mt-5 mb-5" style="margin: auto;padding-left: 0;padding-right: 0;">' +
     '<h5>Write a new blog entry.</h5>' +
     '<button type="button" class="close"><span aria-hidden="true">&times;</span></button>' +
-    '<form action="http://localhost/services/createentry" method="post">' +
+    '<form action="http://www.sayfuzzypickles.net/services/createentry" method="post">' +
     '<div class="form-group">' +
     '<label for="nameInput">Your name</label>' +
     '<input type="text" class="form-control" name="nameInput">' +
@@ -37,7 +37,7 @@ $(document).ready(function () {
     }
   })
 
-  $.getJSON('http://localhost/services/retrieveentries', function (data) {
+  $.getJSON('http://www.sayfuzzypickles.net/services/retrieveentries', function (data) {
     for (let i = data.length - 1; i >= 0; i--) {
       // append contents to listofarticles
       var title = "<div id='title-" + i + "'><u>" + data[i].title + '</u></div>'
@@ -50,7 +50,7 @@ $(document).ready(function () {
         '<div class="col-sm-8 mt-5 mb-5" style="margin: auto;padding-left: 0;padding-right: 0;">' +
         '<h5>Edit the blog entry</h5>' +
         '<button type="button" class="close"><span aria-hidden="true">&times;</span></button>' +
-        '<form action="http://localhost/services/editentries" method="post">' +
+        '<form action="http://www.sayfuzzypickles.net/services/editentries" method="post">' +
         '<div class="form-group">' +
         '<label for="nameInput">Author\'s name</label>' +
         '<input type="text" class="form-control" name="nameInput" value="' + data[k].user + '">' +
@@ -68,7 +68,7 @@ $(document).ready(function () {
         '</div>' +
         '<button type="submit" class="btn btn-light">Submit</button>' +
         '</form>' +
-        '<form action="http://localhost/services/deleteentry" method="post">' +
+        '<form action="http://www.sayfuzzypickles.net/services/deleteentry" method="post">' +
         '<div class="form-group">' +
         '<input type="hidden" name="id" value="' + data[k]._id + '">' +
         '</div>' +

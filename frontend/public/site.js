@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $.getJSON('http://localhost/services/retrieveentries', function (data) {
+  $.getJSON('http://www.sayfuzzypickles.net/services/retrieveentries', function (data) {
     var i = data.length - 1
     while (i >= 0) {
       var title = '<h1>' + data[i].title + '</h1>'

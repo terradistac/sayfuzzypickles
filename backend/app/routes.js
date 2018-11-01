@@ -13,7 +13,7 @@ module.exports = function (router) {
         if (err) {
           res.send(err)
         }
-        res.redirect('http://localhost')
+        res.redirect('http://www.sayfuzzypickles.net')
       })
     })
 
@@ -23,7 +23,7 @@ module.exports = function (router) {
         if (err) {
           res.send(err)
         }
-        res.setHeader('Access-Control-Allow-Origin', 'http://localhost')
+        res.setHeader('Access-Control-Allow-Origin', 'http://www.sayfuzzypickles.net')
         res.send(entries)
       })
     })
