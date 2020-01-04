@@ -4,4 +4,10 @@ module.exports = function (app) {
       env: process.env.NODE_ENV
     })
   })
+
+  app.get('/administrative', function (req, res) {
+    res.render('adminindex.ejs', {
+      env: process.env.NODE_ENV
+    })
+  })
 }

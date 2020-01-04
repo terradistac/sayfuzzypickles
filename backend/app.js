@@ -9,7 +9,6 @@ const MongoStore = require('connect-mongo')(session)
 const port = process.env.port || 8081
 const router = express.Router()
 
-require('./app/config')(app, express, path)
 require('./app/dbconfig')(mongoose)
 require('./app/routes')(router)
 
@@ -25,11 +24,5 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.use('/api', router)
-
-app.get('/', function (req, res) {
-  res.render('index.ejs', {
-    env: process.env.NODE_ENV
-  })
-})
 
 app.listen(port)
