@@ -57,6 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# pm2 environment ecosystem file
+ecosystem.config.js
+
 # next.js build output
 .next
 

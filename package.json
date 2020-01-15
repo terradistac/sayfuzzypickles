@@ -1,28 +1,7 @@
 {
-  "name": "sayfuzzypickles",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "dependencies": {},
-  "devDependencies": {
-    "eslint": "^5.2.0",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/terradistac/sayfuzzypickles.git"
-  },
-  "author": "Christina Terradista",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/terradistac/sayfuzzypickles/issues"
-  },
-  "homepage": "https://github.com/terradistac/sayfuzzypickles#readme"
+  "private": true,
+  "workspaces": [
+    "sayfuzzypickles-frontend",
+    "sayfuzzypickles-backend"
+  ]
 }
